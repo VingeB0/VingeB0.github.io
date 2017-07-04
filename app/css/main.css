@@ -341,18 +341,25 @@ section {
 }
 
 .main-nav__list li:after {
-  content: '';
-}
-
-.main-nav__list li:hover:after {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   content: '';
-  width: 100%;
+  width: 0;
   height: 4px;
   background-color: #fff;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.main-nav__list li:hover:after {
+  content: '';
+  width: 100%;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .main-nav__list li a {
