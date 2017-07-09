@@ -1,0 +1,38 @@
+@media only screen and (max-width : 980px)
+    .contacts-general-info
+        width: 100%
+    .general-info__list 
+        text-align: center
+
+@media only screen and (max-width : 660px)
+    .social__list
+        margin-bottom: 40px;
+
+@media only screen and (max-width : 540px)
+    .header
+        padding: 30px 0 22px
+    .main-nav
+        display: none
+    .social__list
+        margin-bottom: 20px
+    .mobile-menu__toogle
+        display: block
+    .main-nav__list
+        margin-top: 20px
+        li
+            display: block
+            width: 100%
+            position: relative
+            padding: 0 0
+            margin-bottom: 10px
+            cursor: pointer
+            @include inlineblock(middle)
+            margin-right: 0
+
+@media only screen and (max-width : 420px)
+    .general-info-title
+        margin-right: 7px
+    .general-info__list li
+        margin-bottom: 8px
+    .general-info-icon::before
+        margin-right: 4px

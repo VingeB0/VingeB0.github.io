@@ -1,2 +1,2 @@
-# [VingeB0.github.io/app](https://vingeb0.github.io/app/)
+# [VingeB0.github.io](https://vingeb0.github.io)
 Portfolio

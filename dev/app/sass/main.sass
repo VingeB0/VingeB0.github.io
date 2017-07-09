@@ -1,0 +1,47 @@
+// Подключаем переменные
+@import 'vars.sass'
+// Подключаем шрифты
+@import 'fonts.sass'
+// Подключаем спрайты (просто раскоментируем импорт при появлении PNG спрайтов)
+@import 'sprite.sass'
+// Подключаем миксины
+@import 'mixins.sass'
+// Свои стили для тегов, прижатие футера, прелоадер
+@import 'adjustment.sass'
+
+body
+  font-size: 16px
+  line-height: 1
+  position: relative
+  overflow-x: hidden
+  min-width: 320px
+  text-size-adjust: none
+  -webkit-font-smoothing: antialiased
+  font-family: $mainFont, $fontfamily
+  color: $mainColor
+
+section
+  position relative
+
+.container
+  position: relative
+  width: 98%
+  max-width: 960px
+  margin: 0 auto
+
+// Общие стили
+@import 'common.sass'
+// Стили шапки
+@import 'modules/header.sass'
+// Стили секции portfolio-items с страницы portfolio
+@import 'sections/portfolio.sass'
+// Стили секции contact с страницы contacts
+@import 'sections/contact.sass'
+// Стили секции skills с страницы skills
+@import 'sections/skills.sass'
+// Стили секции main-page с страницы index
+@import 'sections/main-page.sass'
+// Стили футера
+@import 'modules/footer.sass'
+// Стили медиазапросов
+@import 'media.sass'

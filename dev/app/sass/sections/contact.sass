@@ -1,0 +1,46 @@
+.contacts-info
+	padding: 30px 0
+
+.contacts-general-info
+	width: 34%
+	margin: 0 auto
+	text-align: center
+
+.general-info__list
+	text-align: left
+	li
+		display: block
+		font-family: $boldFont, $fontfamily
+		margin-bottom: 15px
+		a
+			font: 18px	$boldFont, $fontfamily
+			color: $mainColor
+			&:hover
+				color: $footerBgColor
+				text-decoration: underline
+			
+
+.general-info-title
+	margin-right: 20px
+	font: 18px	$boldFont
+	color: $footerBgColor
+
+.general-info-icon
+	&:before
+		content: ''
+		@include inlineblock(bottom)
+		margin-right: 10px
+
+.general-info-icon--house
+	&:before
+		@include sprite($s-house)
+
+
+.general-info-icon--smartphone
+	&:before
+		@include sprite($s-smartphone)
+
+
+.general-info-icon--email
+	&:before
+		@include sprite($s-email)

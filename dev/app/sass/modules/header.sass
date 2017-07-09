@@ -1,0 +1,181 @@
+.header
+	padding-top: 80px
+	position: relative
+	background: url('../img/general/header_bg.jpg') center center no-repeat
+	background-size: cover
+	color: #fff
+	text-align: center
+	.container
+		z-index: 2
+	&:after
+		content: ''
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		z-index: 1
+		background-color: rgba(0,0,0,0.3)
+		display: block
+
+.main-photo
+	margin: 0 auto 30px
+	position: relative
+	width: 150px
+	height: 150px
+	border-radius: 50%
+	overflow: hidden
+	z-index: 99999
+	background-color: #eff5f4
+	&:after
+		content: ''
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		z-index: 1
+		background-color: rgba(0,0,0,0.1)
+		display: block
+
+.main-photo__img
+	display: block
+	margin: 0 auto
+
+.header-name
+	font-size: 30px
+	font-family: $boldFont, $fontfamily
+	margin-bottom: 22px
+
+.header-profession
+	display: block
+	font-size: 20px
+	font-family: $mainFont, $fontfamily
+	margin-bottom: 25px
+
+.social
+	text-align: center
+
+.social__list
+	position: relative
+	margin-bottom: 90px
+	li
+		@include inlineblock (middle)
+		margin-right: 15px
+		&:last-child
+			margin-right: 0
+
+.social-link
+	outline: none
+	&:before
+		content: ''
+		@include inlineblock (middle)
+		transition: 0.6s
+	&:hover
+		&:before
+			transition: 0.6s
+			transform: rotate(360deg)
+
+.social-link--vk
+	&:before
+		@include sprite($s-vk)
+
+.social-link--fb
+	&:before
+		@include sprite($s-fb)
+
+.social-link--gh
+	&:before
+		@include sprite($s-gh)
+
+.social-link--gm
+	&:before
+		@include sprite($s-gmail)
+
+.social-link--gm
+	&:hover + .social-tooltip-gm
+		opacity: 1
+
+.social-tooltip-gm
+	position: absolute
+	font-family: $semiFont, $fontfamily
+	opacity: 0
+	top: -20px
+	right: 50%
+	margin-right: -90px	
+
+.main-nav
+	&.active
+		display: block
+
+.main-nav__list
+	li
+		position: relative
+		padding: 0 8px 20px
+		@include inlineblock(middle)
+		margin-right: 22px
+		&:last-child
+			margin-right: 0
+		&:after
+			position: absolute
+			bottom: 0
+			left: 0
+			right: 0
+			content: ''
+			width: 0
+			height: 4px
+			background-color: #fff
+			transition: 0.6s
+		&:hover
+			&:after
+				content: ''
+				width: 100%
+				transition: 0.6s
+		a
+			font: 15px $boldFont, $fontfamily
+			color: #fff
+			text-transform: uppercase
+			padding-bottom: 20px
+
+.mobile-menu__toogle
+	position: relative
+	margin: 0 auto
+	cursor: pointer
+	display: none
+	width: 34px
+	height: 22px
+	&.show
+		.mobile-menu__top-line
+			top: 10px
+			transition: 0.6s
+			transform: rotate(45deg)
+		.mobile-menu__middle-line
+			top: 10px
+			opacity: 0
+			transition: 0.6s
+		.mobile-menu__bottom-line
+			top: 10px
+			transition: 0.6s
+			transform: rotate(-45deg)
+
+.mobile-menu__line
+	position: absolute
+	height: 3px
+	width: 32px
+	background-color: #fff
+	border-radius: 20%
+
+.mobile-menu__top-line
+	left: 0
+	top: 16px
+	transition: 0.6s
+
+.mobile-menu__middle-line
+	left: 0
+	opacity: 1
+	transition: 0.6s
+
+.mobile-menu__bottom-line
+	left: 0
+	top: 8px
+	transition: 0.6s

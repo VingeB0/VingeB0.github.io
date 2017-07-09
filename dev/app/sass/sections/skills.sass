@@ -1,0 +1,55 @@
+.skills-info
+	padding: 30px 0
+
+.skills__list
+	li
+		margin-bottom: 16px
+		font: 18px	$boldFont, $fontfamily
+		color: $footerBgColor
+
+.skills-icon
+	&:before
+		content: ''
+		@include inlineblock(middle)
+		margin-right: 16px
+		margin-bottom: 10px
+
+.skills-icon.skills-icon--html
+	&:before
+		@include sprite($s-html)
+
+.skills-icon.skills-icon--js
+	&:before
+		@include sprite($s-js)
+
+.skills-icon.skills-icon--sass
+	&:before
+		@include sprite($s-sass)
+
+.skills-icon.skills-icon--pug
+	&:before
+		@include sprite($s-pug)
+
+.skills-icon.skills-icon--bp3
+	&:before
+		@include sprite($s-bp3)
+
+.skills-icon.skills-icon--gulp
+	&:before
+		@include sprite($s-gulp)
+
+.skills-icon.skills-icon--code
+	&:before
+		@include sprite($s-murkup)
+
+.skills-icon.skills-icon--git
+	&:before
+		@include sprite($s-git)
+
+.skills-icon.skills-icon--ps
+	&:before
+		@include sprite($s-photoshop)
+
+.skills-icon--bem
+	&:before
+		@include sprite($s-bem)
